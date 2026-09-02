@@ -1,1 +1,3 @@
-"# ECT2524 - Introduá∆o Ö Otimizaá∆o" 
+# Estudos de Introdu√ß√£o a Otimiza√ß√£o
+
+Apenas um teste
