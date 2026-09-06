@@ -1,0 +1,22 @@
+model dieta.mod;
+data dieta.dat;
+
+option solver highs;
+
+solve;
+
+display x;
+display Custo_Total;
+
+
+
+
+
+
+
+
+
+
+
+
+
