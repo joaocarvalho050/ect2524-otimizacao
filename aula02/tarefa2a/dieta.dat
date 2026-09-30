@@ -10,6 +10,16 @@ set ALIMENTOS :=
     couve
     laranja;
 
+set NUTRIENTES :=
+    calorias
+    proteina
+    calcio
+    sodio
+    ferro
+    vitamina_A
+    vitamina_C
+    vitamina_B1;
+
 param custo :=
     arroz        0.60
     feijao       0.80
@@ -22,99 +32,35 @@ param custo :=
     couve        0.80
     laranja      0.70;
 
-param calorias :=
-    arroz        128
-    feijao        76
-    frango       163
-    ovo           146
-    leite          61
-    banana        107
-    batata_doce    77
-    cenoura        34
-    couve          27
-    laranja        37;
+param a:
+             calorias proteina calcio sodio  ferro  vitamina_A vitamina_C vitamina_B1 :=
+arroz           128      2.5   0.005 0.001 0.0003       0        0.0       0.16
+feijao           76      4.8   0.027 0.002 0.0010       0        0.0       0.10
+frango          163     31.5   0.006 0.036 0.0003       0        0.0       0.10
+ovo             146     13.0   0.049 0.146 0.0010      32        0.0       0.09
+leite            61      3.2   0.123 0.043 0.0000      39        0.0       0.04
+banana          107      1.1   0.006 0.001 0.0004      32       21.6       0.03
+batata_doce      77      0.6   0.017 0.003 0.0003     218        0.0       0.08
+cenoura          34      1.3   0.023 0.076 0.0002     469        5.1       0.07
+couve            27      2.9   0.131 0.006 0.0005     248       96.7       0.20
+laranja          37      1.0   0.022 0.001 0.0001      21       53.7       0.09;
 
-param proteina :=
-    arroz         2.5
-    feijao        4.8
-    frango       31.5
-    ovo          13.0
-    leite         3.2
-    banana        1.1
-    batata_doce   0.6
-    cenoura       1.3
-    couve         2.9
-    laranja       1.0;
+param minimo :=
+    calorias      1800
+    proteina        50
+    calcio         1.0
+    sodio          1.5
+    ferro        0.008
+    vitamina_A     600
+    vitamina_C      75
+    vitamina_B1    1.1;
 
-param calcio :=
-    arroz        0.005
-    feijao       0.027
-    frango       0.006
-    ovo          0.049
-    leite        0.123
-    banana       0.006
-    batata_doce  0.017
-    cenoura      0.023
-    couve        0.131
-    laranja      0.022;
-
-param sodio :=
-    arroz        0.001
-    feijao       0.002
-    frango       0.036
-    ovo          0.146
-    leite        0.043
-    banana       0.001
-    batata_doce  0.003
-    cenoura      0.076
-    couve        0.006
-    laranja      0.001;
-
-param ferro :=
-    arroz        0.0003
-    feijao       0.0010
-    frango       0.0003
-    ovo          0.0010
-    leite        0.0000
-    banana       0.0004
-    batata_doce  0.0003
-    cenoura      0.0002
-    couve        0.0005
-    laranja      0.0001;
-
-param vitamina_A :=
-    arroz          0
-    feijao         0
-    frango         0
-    ovo           32
-    leite          39
-    banana         32
-    batata_doce   218
-    cenoura       469
-    couve         248
-    laranja        21;
-
-param vitamina_C :=
-    arroz          0.0
-    feijao         0.0
-    frango         0.0
-    ovo            0.0
-    leite          0.0
-    banana        21.6
-    batata_doce    0.0
-    cenoura        5.1
-    couve         96.7
-    laranja       53.7;
-
-param vitamina_B1 :=
-    arroz         0.16
-    feijao        0.10
-    frango        0.10
-    ovo           0.09
-    leite         0.04
-    banana        0.03
-    batata_doce   0.08
-    cenoura       0.07
-    couve         0.20
-    laranja       0.09;
-
+param maximo :=
+    calorias      2400
+    proteina       175
+    calcio         2.5
+    sodio          2.3
+    ferro        0.045
+    vitamina_A    3000
+    vitamina_C    2000
+    vitamina_B1     50;
