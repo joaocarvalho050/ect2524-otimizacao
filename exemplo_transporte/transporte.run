@@ -1,0 +1,11 @@
+reset;
+
+model transporte.mod;
+data transporte.dat;
+
+option solver highs;
+
+solve;
+
+display x11, x12, x21, x22;
+display Custo_Total;

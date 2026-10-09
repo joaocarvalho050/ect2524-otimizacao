@@ -1,0 +1,4 @@
+set DEPOSITOS;
+set CIDADES;
+
+var x {DEPOSITOS, CIDADES} >= 0;
