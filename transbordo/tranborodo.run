@@ -1,0 +1,12 @@
+reset;
+
+model transbordo.mod;
+data transbordo.dat;
+
+option solver highs;
+
+solve;
+
+display Custo_Total;
+display entrada;
+display saida;

@@ -1,0 +1,20 @@
+set DEPOSITOS := D1 D2;
+set CENTROS := T1;
+set CIDADES := C1 C2;
+
+param capacidade :=
+D1 100
+D2 80;
+
+param demanda :=
+C1 70
+C2 50;
+
+param custo_entrada:
+       T1 :=
+D1      4
+D2      3;
+
+param custo_saida:
+       C1  C2 :=
+T1      2   5;
